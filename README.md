@@ -1,4 +1,4 @@
-# 🎙️ AI Voice Assistant - Bank Support Training
+# AI Voice Assistant - Bank Support Training
 
 > Real-time voice simulation for bank customer support training with ASR→LLM→TTS pipeline
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -24,7 +24,7 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 An AI-powered voice assistant designed for bank customer support training. The system provides realistic voice interactions using state-of-the-art technologies:
 
@@ -33,24 +33,24 @@ An AI-powered voice assistant designed for bank customer support training. The s
 - **TTS (Text-to-Speech)**: Kokoro-82M for natural voice (local, offline)
 
 ### Use Cases
-- 💼 Bank support agent training and assessment
-- 🎓 Customer service simulation scenarios
-- 🧪 Voice interface prototyping and testing
-- 🎭 Multi-modal AI demonstrations
+- Bank support agent training and assessment
+- Customer service simulation scenarios
+- Voice interface prototyping and testing
+- Multi-modal AI demonstrations
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Capabilities
-- **🎤 Manual Recording Controls** - Explicit START/STOP buttons for precise control
-- **🎯 High-Accuracy ASR** - Groq Whisper for speech transcription
-- **🤖 Intelligent Responses** - Scenario-specific AI behavior and prompts
-- **🔊 Natural Voice** - Kokoro-82M local TTS (11+ voices, runs offline)
-- **🎭 Three Scenarios** - Lost Card, Failed Transfer, Locked Account
-- **📊 Performance Metrics** - Real-time latency tracking (ASR, LLM, TTS)
-- **💬 Conversation History** - Multi-turn dialogue with context
-- **🔄 State Management** - Context-aware conversation flow
+- **Manual Recording Controls** - Explicit START/STOP buttons for precise control
+- **High-Accuracy ASR** - Groq Whisper for speech transcription
+- **Intelligent Responses** - Scenario-specific AI behavior and prompts
+- **Natural Voice** - Kokoro-82M local TTS (11+ voices, runs offline)
+- **Three Scenarios** - Lost Card, Failed Transfer, Locked Account
+- **Performance Metrics** - Real-time latency tracking (ASR, LLM, TTS)
+- **Conversation History** - Multi-turn dialogue with context
+- **State Management** - Context-aware conversation flow
 
 ### Technical Highlights
 - **Local TTS** - Zero API costs for voice synthesis, runs offline
@@ -61,7 +61,7 @@ An AI-powered voice assistant designed for bank customer support training. The s
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -93,7 +93,7 @@ An AI-powered voice assistant designed for bank customer support training. The s
 
 ---
 
-## 💻 System Requirements
+## System Requirements
 
 ### Hardware
 - **CPU**: Modern multi-core processor (Intel/AMD/Apple Silicon)
@@ -110,7 +110,7 @@ An AI-powered voice assistant designed for bank customer support training. The s
 
 ---
 
-## 🚀 Complete Installation Guide
+## Complete Installation Guide
 
 Follow these steps carefully to set up the system on your local machine.
 
@@ -140,7 +140,7 @@ sudo apt install python3.11 python3.11-venv python3-pip
 **Windows:**
 1. Download from [python.org](https://www.python.org/downloads/)
 2. Run installer
-3. ✅ **IMPORTANT**: Check "Add Python to PATH" during installation
+3. **IMPORTANT**: Check "Add Python to PATH" during installation
 
 **Verify installation:**
 ```bash
@@ -238,7 +238,7 @@ venv\Scripts\activate.bat
 venv\Scripts\Activate.ps1
 ```
 
-**✅ Success indicator:** You should see `(venv)` at the beginning of your terminal prompt.
+**Success indicator:** You should see `(venv)` at the beginning of your terminal prompt.
 
 Example:
 ```
@@ -411,9 +411,9 @@ If it doesn't open automatically:
 3. **Speak clearly**: *"Hi, I lost my credit card yesterday"*
 4. Click **"STOP & PROCESS"** button
 5. **Wait for processing:**
-   - 🎯 Transcribing... (~1 second)
-   - 🤖 Thinking... (~1-2 seconds)
-   - 🔊 Speaking... (~3-5 seconds)
+   - Transcribing... (~1 second)
+   - Thinking... (~1-2 seconds)
+   - Speaking... (~3-5 seconds)
 6. **Listen to the AI's response**
 
 **Expected behavior:**
@@ -425,7 +425,7 @@ If it doesn't open automatically:
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables Reference
 
@@ -499,7 +499,7 @@ LLM_PRICE_OUT_PER_1K=0
 
 ---
 
-## 🎯 Usage
+## Usage
 
 ### Streamlit Web UI (Recommended)
 
@@ -612,11 +612,11 @@ Voice_Test_Project/
 
 ---
 
-## 🎭 Scenarios
+## Scenarios
 
 The system includes three pre-configured bank support scenarios:
 
-### 🔒 Lost Card Support
+### Lost Card Support
 
 **Persona File:** `config/personas/card_lost.json`
 
@@ -637,7 +637,7 @@ The system includes three pre-configured bank support scenarios:
 
 ---
 
-### 💸 Failed Transfer Support
+### Failed Transfer Support
 
 **Persona File:** `config/personas/transfer_failed.json`
 
@@ -657,7 +657,7 @@ The system includes three pre-configured bank support scenarios:
 
 ---
 
-### 🚫 Locked Account Support
+### Locked Account Support
 
 **Persona File:** `config/personas/account_locked.json`
 
@@ -696,7 +696,7 @@ Edit JSON files in `config/personas/` to customize AI behavior:
 
 ---
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 ### Typical Latency (per turn)
 
@@ -726,7 +726,7 @@ Edit JSON files in `config/personas/` to customize AI behavior:
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues and Solutions
 
@@ -841,70 +841,5 @@ streamlit run streamlit_app.py --server.port 8502
 
 ---
 
-#### Issue 8: "No speech detected"
 
-**Causes:**
-- Spoke too quietly
-- Background noise too loud
-- Microphone sensitivity too low
 
-**Solutions:**
-- Speak louder and clearer
-- Reduce background noise
-- Move closer to microphone
-- Adjust microphone sensitivity in system settings
-
----
-
-### Getting Help
-
-If you encounter other issues:
-
-1. **Check logs**: Look at terminal output for error messages
-2. **Check environment**: Run all verification commands from Step 8
-3. **Restart application**: Sometimes a fresh start helps
-4. **Check dependencies**: Re-run `pip install -r requirements.txt`
-5. **Update Python**: Ensure Python 3.11+ is installed
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Areas for improvement:
-- Additional scenarios and personas
-- Multi-language support
-- Advanced voice activity detection
-- Real-time streaming UI updates
-- Performance optimizations
-
----
-
-## 🙏 Acknowledgments
-
-- **Groq** - Fast inference API for ASR and LLM
-- **Kokoro TTS** - High-quality local voice synthesis
-- **Streamlit** - Rapid web interface development
-- **Open Source Community** - All the amazing libraries used
-
----
-
-## 📧 Support
-
-For questions or issues:
-- Review this README thoroughly
-- Check the Troubleshooting section
-- Review terminal output for error messages
-- Ensure all installation steps were followed
-
----
-
-**Built with ❤️ for bank support training**
-
-**Version:** 1.0.0  
-**Last Updated:** November 2025
